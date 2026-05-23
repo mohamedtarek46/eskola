@@ -30,7 +30,7 @@ export const useUpdateMe = () => {
   return useMutation({
     mutationFn: async (data) => {
       const res = await fetch(
-        process.env.NEXT_PUBLIC_API_URL + "/api/users/me",
+        process.env.NEXT_PUBLIC_API_URL + "/api/auth/me",
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
