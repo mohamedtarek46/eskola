@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  /* =========================
+     Colors
+  ========================== */
+
+  --color-primary: #3b82f6;
+  --color-secondary: #10b981;
+  --color-accent: #f59e0b;
+
+  --color-danger: #ef4444;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+
+  --color-text-primary: #1f2937;
+  --color-text-secondary: #6b7280;
+  --color-text-muted: #9ca3af;
+
+  --color-bg-light: #f9fafb;
+  --color-border: #e5e7eb;
+
+  /* =========================
+     Typography
+  ========================== */
+
+  --text-h1: 2.5rem;
+  --text-h1--line-height: 3rem;
+  --font-weight-h1: 700;
+
+  --text-h2: 2rem;
+  --text-h2--line-height: 2.5rem;
+  --font-weight-h2: 600;
+
+  --text-h3: 1.5rem;
+  --text-h3--line-height: 2rem;
+  --font-weight-h3: 600;
+
+  --text-h4: 1.25rem;
+  --text-h4--line-height: 1.75rem;
+  --font-weight-h4: 600;
+
+  --text-body: 1rem;
+  --text-body--line-height: 1.5rem;
+
+  --text-small: 0.875rem;
+  --text-small--line-height: 1.25rem;
+}
+@layer base {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  small {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+/* =========================
+   Custom Utilities
+========================== */
+
+@utility container {
+  @apply px-3 w-full mx-auto sm:max-w-152.5 md:max-w-182.5 lg:max-w-247.5 xl:max-w-287.5;
+}
