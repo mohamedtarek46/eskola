@@ -4,7 +4,7 @@ import { comparePassword, hashPassword } from "../../utils/hashingPassword.js";
 import cookieOptions from "../../config/cookieOptions.js";
 
 export const logoutUser = async (req, res) => {
-  res.clearCookie("token").json({ message: "Logged out successfully" });
+  res.clearCookie("token",cookieOptions).json({ message: "Logged out successfully" });
 };
 
 export const loginUser = async (req, res) => {
