@@ -70,6 +70,7 @@ export const createUser = async (req, res) => {
 
     const token = jwt.sign(
       {
+        _id: user._id,
         email: user.email,
         role: user.role,
         firstName: user.firstName,
