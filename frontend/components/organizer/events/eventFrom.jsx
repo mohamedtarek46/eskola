@@ -109,7 +109,7 @@ export default function EventForm({ mode = "create", initialData }) {
         .min(1, "Minimum capacity is 1"),
       status: Yup.string()
         .required("Status is required")
-        .oneOf(["published", "draft"]),
+        .oneOf(["published", "draft" , "completed" ]),
     }),
 
     onSubmit: async (values) => {
